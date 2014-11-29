@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'appointmentreminder/index' => 'appointmentreminder#index'
   root 'appointmentreminder#index'
 
   post 'appointmentreminder/makecall' => 'appointmentreminder#makecall'
