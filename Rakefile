@@ -4,3 +4,5 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+# "WHenveer" Scheduler is going to run a RAKE Task at specific times to send a call/phone

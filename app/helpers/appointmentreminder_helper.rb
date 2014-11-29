@@ -5,12 +5,16 @@ module AppointmentreminderHelper
   ACCOUNT_TOKEN = ENV['ACCOUNT_TOKEN']
 
   # base URL of this application
+  # this is the route we hit to access the api
+  # ** need ngrok to test twilio
+  # 1) gem 'pow' to test ngrok and backbone on the same wifi
+  # 2) test twilio+api and backbone on the same computer
+  # "/appointmentreminder/..." = the backbone route
   BASE_URL = "http://2c253d0d.ngrok.com/appointmentreminder"
 
   # Outgoing Caller ID you have previously validated with Twilio
   CALLER_NUM = '+14083735458'
   def makecall
-    p "make call"
     unless params['number']
       params['number']
       redirect_to :action => '.', 'msg' => 'Invalid phone number'
@@ -26,9 +30,7 @@ module AppointmentreminderHelper
 
     begin
       client = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)
-      p "make call 2222222"
       client.account.calls.create data
-      p "make call 3333333"
     rescue StandardError => bang
       redirect_to :action => '.', 'msg' => "Error #{bang}"
       return
@@ -39,12 +41,10 @@ module AppointmentreminderHelper
 
 
   def reminder
-    p "REMINDDDDDD" * 10
     ## This is user we will customize the message for.
     # @user = User.find_by(number: params[:number])
     @post_to = BASE_URL + '/directions'
     render :action => "reminder.xml.builder", :layout => false
-    p "DONEEEE REMIND" * 10
   end
 
   def directions
