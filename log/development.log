@@ -1,0 +1,2245 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 14:47:05 -0800
+
+ActiveRecord::NoDatabaseError (FATAL:  database "medmento_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.7) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.7ms)
+  [1m[36m (30.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (12.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 14:47:26 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.7/lib/rails/templates/rails/welcome/index.html.erb (40.7ms)
+Completed 200 OK in 106ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 14:49:49 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1207ms (Views: 1206.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 14:49:50 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 14:50:12 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.7) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.7) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.7) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (43.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 14:51:56 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 14:51:56 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 14:51:56 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 14:51:56 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 14:51:56 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 14:51:57 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 14:51:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 14:51:57 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 14:52:00 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 1125ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:36:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:32:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 14:58:18 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 822ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:36:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:32:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.1ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 14:58:57 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"(669) 721-1258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 716ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:36:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:32:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (54.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.3ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 14:59:22 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 738ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:36:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:32:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:00:25 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:00:30 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 987ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:01:06 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 705ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:01:27 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:01:29 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 780ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:43:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:02:48 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:02:54 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 724ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:43:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:03:15 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:03:16 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:03:17 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 753ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:43:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:05:26 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:05:28 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 855ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:43:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:36:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:06:48 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 268ms (Views: 244.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:06:48 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:06:49 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:06:53 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 804ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error From is not a valid phone number: JohnLin"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:17 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:10:20 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 794ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:10:54 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:10:56 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 774ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The source phone number provided, fkldsfkldjd, is not yet verified for your account. You may only make calls from phone numbers that you've verified or purchased from Twilio."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:09 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:11:11 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 787ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:11:40 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:11:42 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 1013ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:13:53 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 815ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:16:46 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:16:48 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 852ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:44 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:26:49 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 871ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:26:55 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:26:59 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 866ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:29:04 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 837ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:30:11 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 888ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:35:34 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:35:38 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 2621ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"", :controller=>"appointmentreminder", :msg=>"Calling 6697211258..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:36:18 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 907ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"", :controller=>"appointmentreminder", :msg=>"Calling 4083735458..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:37:58 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:38:01 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 876ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Calling 4083735458..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:02 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:41:09 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+4083735458...
+Completed 302 Found in 1043ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+4083735458..." for 127.0.0.1 at 2014-11-28 15:41:10 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 4083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:41:11 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:42:00 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+6697211258...
+Completed 302 Found in 898ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+6697211258..." for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 6697211258..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:01 -0800
+
+
+Started GET "/appointmentreminder/index?msg=Calling+6697211258..." for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 6697211258..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:51 -0800
+
+
+Started GET "/appointmentreminder/index?msg=Calling+6697211258..." for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 6697211258..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:52 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:42:56 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"6697211258"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+6697211258...
+Completed 302 Found in 887ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+6697211258..." for 127.0.0.1 at 2014-11-28 15:42:56 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 6697211258..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:56 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:42:57 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:42:59 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+4083735458...
+Completed 302 Found in 878ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+4083735458..." for 127.0.0.1 at 2014-11-28 15:43:00 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 4083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:43:00 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"4083735458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+4083735458...
+Completed 302 Found in 975ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+4083735458..." for 127.0.0.1 at 2014-11-28 15:43:01 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 4083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:43:02 -0800
+
+
+Started GET "/appointmentreminder/index?msg=Calling+4083735458..." for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 4083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:45:59 -0800
+
+
+Started GET "/appointmentreminder/" for 127.0.0.1 at 2014-11-28 15:47:53 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:48:01 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:48:08 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"9396400359"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 815ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The number +19396400359 is unverified. Trial accounts may only make calls to verified numbers."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:51:00 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"1 408-373-5458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+1+408-373-5458...
+Completed 302 Found in 925ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+1+408-373-5458..." for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 1 408-373-5458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:51:01 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 15:57:23 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"14083735458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+14083735458...
+Completed 302 Found in 1474ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+14083735458..." for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 14083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 15:57:24 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:17:17 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"14083735458"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+14083735458...
+Completed 302 Found in 980ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+14083735458..." for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 14083735458..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:17:18 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:20:38 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7812447556"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 735ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The number +17812447556 is unverified. Trial accounts may only make calls to verified numbers."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:21:52 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7812447556"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+7812447556...
+Completed 302 Found in 952ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+7812447556..." for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 7812447556..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:21:53 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:00 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:23:29 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:23:39 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7812447556"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 861ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:07 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:24:16 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7812447556"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 632ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid URL: www.google.com/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:24:30 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7812447556"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+7812447556...
+Completed 302 Found in 864ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+7812447556..." for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 7812447556..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:24:31 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:36:09 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:37:15 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5144916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 792ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The number +15144916041 is unverified. Trial accounts may only make calls to verified numbers."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.1ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:37:35 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+5044916041...
+Completed 302 Found in 903ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+5044916041..." for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 5044916041..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:36 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:37:49 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:37:50 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:38:02 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 919ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"", :controller=>"appointmentreminder", :msg=>"Calling 5044916041..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:38:37 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916asdfadfg"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 733ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The number +504491627332334 is unverified. Trial accounts may only make calls to verified numbers."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:38:47 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"234234"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 857ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error The number 234234 is unverified. Trial accounts may only make calls to verified numbers."}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:57:59 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 1060ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"/index", :controller=>"appointmentreminder", :msg=>"Calling 5044916041..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:13 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 131ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:32 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 16:58:35 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/index?msg=Calling+5044916041...
+Completed 302 Found in 871ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/index?msg=Calling+5044916041..." for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 5044916041..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 16:58:36 -0800
+
+
+Started GET "/appointmentreminder/index?msg=Calling+5044916041..." for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 5044916041..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:14 -0800
+
+
+Started GET "/appointmentreminder/index?msg=Calling+5044916041..." for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+Processing by AppointmentreminderController#index as HTML
+  Parameters: {"msg"=>"Calling 5044916041..."}
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 17:01:16 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:01:19 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to http://localhost:3000/appointmentreminder/reminder?msg=Calling+5044916041...
+Completed 302 Found in 874ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/reminder?msg=Calling+5044916041..." for 127.0.0.1 at 2014-11-28 17:01:20 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/reminder"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 17:04:31 -0800
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:04:35 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.8ms)
+Completed 200 OK in 962ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/appointmentreminder.css?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/appointmentreminder.js?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-28 17:08:13 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:09:29 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 271ms (Views: 246.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:09:39 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 906ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Url is not a valid url: http://localhost:3000/appointmentreminder/reminder"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:10:05 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2014-11-28 17:10:09 -0800
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2014-11-28 17:10:09 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (96.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/railties-4.1.7/lib/rails/templates/rails/info/routes.html.erb within layouts/application (114.2ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:14:42 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:14:48 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 964ms
+
+ActionController::UrlGenerationError (No route matches {:action=>"", :controller=>"appointmentreminder", :msg=>"Calling 5044916041..."}):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 17:16:02 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 92ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:18:19 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 951ms
+
+ActionView::MissingTemplate (Missing template appointmentreminder/Calling 5044916041..., application/Calling 5044916041... with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/Desktop/med/medmento/app/views"
+):
+  app/controllers/appointmentreminder_controller.rb:48:in `makecall'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-28 17:18:41 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"70129", "FromState"=>"CA", "Called"=>"+15044916041", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"70129", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CA89f16a1f6a095e548e82d5cbcef7112d", "CalledState"=>"LA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"NEW ORLEANS", "ToState"=>"LA", "To"=>"+15044916041", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"NEW ORLEANS"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.8ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 17:24:46 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 985ms (Views: 37.1ms | ActiveRecord: 0.0ms)
