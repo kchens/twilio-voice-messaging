@@ -2243,3 +2243,97 @@ Processing by AppointmentreminderController#makecall as HTML
 Can't verify CSRF token authenticity
   Rendered text template (0.0ms)
 Completed 200 OK in 985ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 18:40:44 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 447ms (Views: 438.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 18:40:48 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 2ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 18:44:12 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1339ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 18:55:27 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1619ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 19:02:36 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1363ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-28 19:02:56 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"70129", "FromState"=>"CA", "Called"=>"+15044916041", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"70129", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CA9471dddc809253cc70a6014a90095b9f", "CalledState"=>"LA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"NEW ORLEANS", "ToState"=>"LA", "To"=>"+15044916041", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"NEW ORLEANS"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.8ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 19:03:43 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 833ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-28 19:04:01 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"70129", "FromState"=>"CA", "Called"=>"+15044916041", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"70129", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CAada17c432e224a2c3fe9a3f629e74f37", "CalledState"=>"LA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"NEW ORLEANS", "ToState"=>"LA", "To"=>"+15044916041", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"NEW ORLEANS"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.6ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-28 19:17:03 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 222ms (Views: 212.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-28 19:17:08 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"5044916041"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1532ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-28 19:17:29 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"70129", "FromState"=>"CA", "Called"=>"+15044916041", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"70129", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CA086ab77242f459110685e8febeea9c3f", "CalledState"=>"LA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"NEW ORLEANS", "ToState"=>"LA", "To"=>"+15044916041", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"NEW ORLEANS"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.8ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
