@@ -4,8 +4,8 @@ require "twilio-ruby"
 class AppointmentreminderController < ApplicationController
 
   # your Twilio authentication credentials
-  ACCOUNT_SID = 'AC5428194410466ab7215049721a011efb'
-  ACCOUNT_TOKEN = '53851fd334328db84eb45d2ce895977b'
+  ACCOUNT_SID = ENV['ACCOUNT_SID']
+  ACCOUNT_TOKEN = ENV['ACCOUNT_TOKEN']
 
   # base URL of this application
   BASE_URL = "http://2c253d0d.ngrok.com/appointmentreminder"
