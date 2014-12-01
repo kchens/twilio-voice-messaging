@@ -2337,3 +2337,493 @@ Processing by AppointmentreminderController#reminder as HTML
 Can't verify CSRF token authenticity
   Rendered appointmentreminder/reminder.xml.builder (0.8ms)
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:50:59 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 105ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:51:04 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1729ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:55:15 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1381ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-30 17:55:35 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"22194", "FromState"=>"CA", "Called"=>"+17034709608", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"22194", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CA318d6598c89ea75b54c39daa2186c4f0", "CalledState"=>"VA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"ARLINGTON", "ToState"=>"VA", "To"=>"+17034709608", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"ARLINGTON"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.6ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 17:56:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.3ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:56:41 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 4ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:35:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:56:43 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:56:47 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 2ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:35:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 17:57:05 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:57:11 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:57:14 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:35:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:57:35 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:57:42 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:35:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.8ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 17:58:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:58:15 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:58:19 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:58:34 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 114ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:58:37 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 4ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.9ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 17:59:05 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:59:21 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 123ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:59:24 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:59:37 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:59:40 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 17:59:54 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 115ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 17:59:57 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:44:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:37:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (47.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.3ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 18:00:04 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:00:31 -0800
+Processing by AppointmentreminderController#index as HTML
+  Rendered appointmentreminder/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 18:00:38 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 3ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error Account SID and auth token are required"}):
+  app/controllers/appointmentreminder_controller.rb:45:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:38:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (41.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.2ms)
+
+
+Started GET "/appointmentreminder/test" for 127.0.0.1 at 2014-11-30 18:01:05 -0800
+
+ActionController::RoutingError (No route matches [GET] "/appointmentreminder/test"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/MightyMouse/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.2ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 18:01:11 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1371ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-30 18:01:34 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"22194", "FromState"=>"CA", "Called"=>"+17034709608", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"22194", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CAfdad841cb7e5693853003dd3d08411ef", "CalledState"=>"VA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"ARLINGTON", "ToState"=>"VA", "To"=>"+17034709608", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"ARLINGTON"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.6ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
