@@ -35,6 +35,11 @@ gem 'dotenv-rails', :groups => [:development, :test]
 # gem 'unicorn'
 gem 'quiet_assets', group: :development
 
+gem 'sidekiq'
+gem 'redis'
+gem 'sidetiq'
+gem 'sinatra'
+gem 'thin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

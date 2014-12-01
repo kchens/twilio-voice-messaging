@@ -2827,3 +2827,131 @@ Processing by AppointmentreminderController#reminder as HTML
 Can't verify CSRF token authenticity
   Rendered appointmentreminder/reminder.xml.builder (0.6ms)
 Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-11-30 18:04:09 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1290ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/reminder" for 127.0.0.1 at 2014-11-30 18:04:32 -0800
+Processing by AppointmentreminderController#reminder as HTML
+  Parameters: {"AccountSid"=>"AC5428194410466ab7215049721a011efb", "ToZip"=>"22194", "FromState"=>"CA", "Called"=>"+17034709608", "FromCountry"=>"US", "CallerCountry"=>"US", "CalledZip"=>"22194", "Direction"=>"outbound-api", "FromCity"=>"SUNNYVALE", "CalledCountry"=>"US", "CallerState"=>"CA", "CallSid"=>"CAe5040315b282bedf481495506e2501b9", "CalledState"=>"VA", "From"=>"+14083735458", "CallerZip"=>"95008", "FromZip"=>"95008", "CallStatus"=>"in-progress", "ToCity"=>"ARLINGTON", "ToState"=>"VA", "To"=>"+17034709608", "ToCountry"=>"US", "CallerCity"=>"SUNNYVALE", "ApiVersion"=>"2010-04-01", "Caller"=>"+14083735458", "CalledCity"=>"ARLINGTON"}
+Can't verify CSRF token authenticity
+  Rendered appointmentreminder/reminder.xml.builder (0.7ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 00:09:35 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1940ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 00:26:39 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 10ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error undefined method `perform' for TwilioWorker:Class"}):
+  app/controllers/appointmentreminder_controller.rb:40:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:33:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 01:07:39 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 01:10:25 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 37ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 09:47:27 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 171ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error undefined method `perform' for TwilioWorker:Class"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:34:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 09:47:40 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 1795ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 10:02:15 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 29ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error undefined method `perform' for TwilioWorker:Class"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:34:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 10:03:16 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+Redirected to 
+Completed 500 Internal Server Error in 29ms
+
+ActionController::UrlGenerationError (No route matches {:action=>".", :controller=>"appointmentreminder", :msg=>"Error undefined method `perform' for TwilioWorker:Class"}):
+  app/controllers/appointmentreminder_controller.rb:42:in `rescue in makecall'
+  app/controllers/appointmentreminder_controller.rb:34:in `makecall'
+
+
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/MightyMouse/.rvm/gems/ruby-2.0.0-p598/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started POST "/appointmentreminder/makecall" for 127.0.0.1 at 2014-12-01 10:05:56 -0800
+Processing by AppointmentreminderController#makecall as HTML
+  Parameters: {"number"=>"7034709608"}
+Can't verify CSRF token authenticity
+  Rendered text template (0.0ms)
+Completed 200 OK in 38ms (Views: 7.3ms | ActiveRecord: 0.0ms)

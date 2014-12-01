@@ -5,8 +5,6 @@ require 'dotenv'
 class AppointmentreminderController < ApplicationController
 
   # your Twilio authentication credentials
-  ACCOUNT_SID = ENV["ACCOUNT_SID"]
-  ACCOUNT_TOKEN = ENV["AUTH_TOKEN"]
 
   # base URL of this application
   BASE_URL = "http://2c253d0d.ngrok.com/appointmentreminder"
@@ -19,28 +17,27 @@ class AppointmentreminderController < ApplicationController
 
   # Use the Twilio REST API to initiate an outgoing call
   def makecall
-    p params
-    p "1---" * 10
+    #Is it a valid phone number?
     unless params['number']
-      p params['number']
-      p "2---" * 10
+      params['number']
       redirect_to :action => '.', 'msg' => 'Invalid phone number'
       return
     end
 
     # parameters sent to Twilio REST API
     data = {
-      :from => CALLER_NUM,
-      :to => params['number'],
-      :url => BASE_URL + '/reminder',
+      "from" => CALLER_NUM,
+      "to" => params['number'],
+      "url" => BASE_URL + '/reminder',
     }
 
     begin
-      p "3---" * 10
-      p client = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)
-      p "4---" * 10
-      p client.account.calls.create data
-      p "5---" * 10
+
+      # client = Twilio::REST::Client.new(ENV["ACCOUNT_SID"], ENV["AUTH_TOKEN"])
+      # client.account.calls.create data
+      p "yolo"
+      TwilioWorker.perform_async(data)
+      p "solo"
     rescue StandardError => bang
       redirect_to :action => '.', 'msg' => "Error #{bang}"
       return
